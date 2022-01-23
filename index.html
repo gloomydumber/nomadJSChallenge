@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="locationWrapper">
+        <div id="location"></div>
+        <div id="weather"></div>
+      </div>
+      <div id="loginWrapper">
+        <form id="loginForm">
+          <input
+            type="text"
+            placeholder="Type Your Name (English)"
+            onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'');"
+          />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <div id="timeWrapper">
+        <div id="ymd">2022-01-23</div>
+        <div id="hms">10:41:43</div>
+      </div>
+      <div id="todoWrapper">
+        <form id="todoForm">
+          <input type="text" id="todoInput" placeholder="Type What to Do" />
+          <input type="submit" value="Submit" />
+        </form>
+        <div id="todosWrapper"></div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
